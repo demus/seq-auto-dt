@@ -13,9 +13,9 @@ declare namespace sequelizeAuto {
     foreignKeys: {};
     dialect: {};
     options: {};
-    build(callback: Function);
-    run(callback: Function);
-    write(attributes: any, callback: Function);
+    build(callback: Function): void;
+    run(callback: Function): Function;
+    write(attributes: any, callback: Function): void;
   }
 
   interface SequelizeAutoOptions {
